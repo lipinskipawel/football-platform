@@ -5,8 +5,13 @@ plugins {
     id("io.github.gradle-nexus.publish-plugin") version "1.3.0"
 }
 
+val artifactGroupId = "com.github.lipinskipawel"
+val artifactName = "football-platform"
+val artifactVersion = "0.1-SNAPSHOT"
+
 nexusPublishing {
     repositories {
+        useStaging = !artifactVersion.endsWith("-SNAPSHOT")
         sonatype()
     }
 }
@@ -14,9 +19,9 @@ nexusPublishing {
 publishing {
     publications {
         create<MavenPublication>("footballPlatform") {
-            groupId = "com.github.lipinskipawel"
-            artifactId = "football-platform"
-            version = "0.1-SNAPSHOT"
+            groupId = artifactGroupId
+            artifactId = artifactName
+            version = artifactVersion
 
             from(components["javaPlatform"])
 
