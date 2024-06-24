@@ -5,6 +5,13 @@ plugins {
     id("io.github.gradle-nexus.publish-plugin") version "1.3.0"
 }
 
+dependencies {
+    constraints {
+        api("org.junit.jupiter:junit-jupiter:5.7.0")
+        api("org.assertj:assertj-core:3.20.2")
+    }
+}
+
 val artifactGroupId = "com.github.lipinskipawel"
 val artifactName = "football-platform"
 val artifactVersion = "0.1-SNAPSHOT"
