@@ -12,9 +12,9 @@ dependencies {
     }
 }
 
-val artifactGroupId = "com.github.lipinskipawel"
-val artifactName = "football-platform"
-val artifactVersion = "0.1-SNAPSHOT"
+group = "com.github.lipinskipawel"
+version = "0.1-SNAPSHOT"
+description = "BOM for football related projects"
 
 nexusPublishing {
     repositories {
@@ -25,10 +25,6 @@ nexusPublishing {
 publishing {
     publications {
         create<MavenPublication>("footballPlatform") {
-            groupId = artifactGroupId
-            artifactId = artifactName
-            version = artifactVersion
-
             from(components["javaPlatform"])
 
             pom {
