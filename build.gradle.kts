@@ -18,7 +18,6 @@ val artifactVersion = "0.1-SNAPSHOT"
 
 nexusPublishing {
     repositories {
-        useStaging = !artifactVersion.endsWith("-SNAPSHOT")
         sonatype()
     }
 }
