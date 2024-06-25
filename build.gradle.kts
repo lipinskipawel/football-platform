@@ -19,6 +19,7 @@ description = "BOM for football related projects"
 nexusPublishing {
     repositories {
         sonatype()
+        useStaging = true
     }
 }
 
