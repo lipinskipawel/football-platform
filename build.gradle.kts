@@ -13,13 +13,12 @@ dependencies {
 }
 
 group = "com.github.lipinskipawel"
-version = "0.1-SNAPSHOT"
+version = "1.0.0"
 description = "BOM for football related projects"
 
 nexusPublishing {
     repositories {
         sonatype()
-        useStaging = true
     }
 }
 
