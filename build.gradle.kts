@@ -7,13 +7,15 @@ plugins {
 
 dependencies {
     constraints {
-        api("org.junit.jupiter:junit-jupiter:5.7.0")
+        api("org.junit.jupiter:junit-jupiter-api:5.7.0")
+        api("org.junit.jupiter:junit-jupiter-params:5.7.0")
+        api("org.junit.jupiter:junit-jupiter-engine:5.7.0")
         api("org.assertj:assertj-core:3.20.2")
     }
 }
 
 group = "com.github.lipinskipawel"
-version = "1.0.0"
+version = "1.1.0"
 description = "BOM for football related projects"
 
 nexusPublishing {
