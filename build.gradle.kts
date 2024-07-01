@@ -7,10 +7,10 @@ plugins {
 
 dependencies {
     constraints {
-        api("org.junit.jupiter:junit-jupiter-api:5.7.0")
-        api("org.junit.jupiter:junit-jupiter-params:5.7.0")
-        api("org.junit.jupiter:junit-jupiter-engine:5.7.0")
-        api("org.assertj:assertj-core:3.20.2")
+        api(libs.testing.junit.api)
+        api(libs.testing.junit.params)
+        api(libs.testing.junit.engine)
+        api(libs.testing.assertj)
     }
 }
 
