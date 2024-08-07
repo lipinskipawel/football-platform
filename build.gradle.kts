@@ -15,7 +15,7 @@ dependencies {
 }
 
 group = "com.github.lipinskipawel"
-version = "1.1.0"
+version = "1.2.0"
 description = "BOM for football related projects"
 
 nexusPublishing {
