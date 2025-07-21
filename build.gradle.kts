@@ -7,6 +7,10 @@ plugins {
 
 dependencies {
     constraints {
+        api(libs.json.jackson.databind)
+        api(libs.json.jackson.databind.jdk8)
+        api(libs.json.jackson.databind.jsr310)
+
         api(libs.testing.junit.api)
         api(libs.testing.junit.params)
         api(libs.testing.junit.engine)
@@ -15,7 +19,7 @@ dependencies {
 }
 
 group = "com.github.lipinskipawel"
-version = "1.2.0"
+version = "1.3.0"
 description = "BOM for football related projects"
 
 nexusPublishing {
